@@ -1,0 +1,235 @@
+//sass --watch zhihu.scss:zhihu.css --style compact
+$topBackground: rgb(33,37,43);
+$borderLineColor: rgb(24,26,31);
+$wordColor: rgb(105, 111, 123);
+$wordHoverColor: rgb(215, 218, 224);
+$currentItemColor: rgb(42, 46, 54);
+$mainWordColor: rgb(171,178,191);
+.transition {
+    transition: 0.2s ease-in-out !important;
+}
+img {
+    opacity: 0.4 !important;
+    @extend .transition;
+    &:hover {
+        opacity: 0.9!important;
+    }
+}
+.zhi {
+    .sprite-global-icon-magnifier-dark,
+    .zu-top-link-logo {
+        opacity: 0.2;
+        @extend .transition;
+        &:hover {
+            opacity: 0.4;
+        }
+    }
+    .sprite-global-icon-magnifier-dark {
+        opacity: 0.2;
+    }
+    .zu-top {
+        background: $topBackground;
+        border-bottom: 1px solid $borderLineColor;
+        box-shadow: none;
+    }
+    .zu-top-nav-link {
+        color: $wordColor;
+        @extend .transition;
+        &:visited {
+            color: $wordColor;
+            @extend .transition;
+        }
+        &:active,
+        &:hover {
+            color: $wordHoverColor;
+        }
+    }
+    .zu-top-nav-li.current {
+        background: $currentItemColor;
+    }
+    .zu-top-search-form .zu-top-search-button {
+        background: $currentItemColor;
+        border: 1px solid $borderLineColor;
+        box-shadow: none;
+    }
+    .zu-top-search-input {
+        background-color: $currentItemColor;
+        border: 1px solid $borderLineColor;
+        box-shadow: none;
+        color: $wordHoverColor;
+        &:focus {
+            background-color: rgb(44, 50, 60);
+            box-shadow: 0 0 2px rgba(200, 200, 200, 0.3);
+        }
+        &::-webkit-input-placeholder {
+            /* WebKit, Blink, Edge */
+            color: $wordColor;
+        }
+        &:-moz-placeholder {
+            /* Mozilla Firefox 4 to 18 */
+            color: $wordColor;
+            opacity: 1;
+        }
+        &::-moz-placeholder {
+            /* Mozilla Firefox 19+ */
+            color: $wordColor;
+            opacity: 1;
+        }
+        &:-ms-input-placeholder {
+            /* Internet Explorer 10-11 */
+            color: $wordColor;
+        }
+    }
+    .zu-top-add-question {
+        color: $wordColor;
+        background: $currentItemColor;
+        border: 1px solid $borderLineColor;
+        box-shadow: none;
+        &:hover {
+            color: $wordHoverColor;
+        }
+    }
+    .top-nav-profile {
+        .top-nav-dropdown {
+            li a {
+                background: $currentItemColor;
+                color: $wordColor;
+                border-color: $borderLineColor;
+                @extend .transition;
+                >i{
+                    opacity: .2;
+                    @extend .transition;
+                }
+                &:hover {
+                    >i{
+                        opacity: .6;
+                    }
+                    background: $currentItemColor;
+                    color: $wordHoverColor;
+                }
+
+            }
+        }
+        &:hover{
+            .zu-top-nav-userinfo {
+                background: $currentItemColor !important;
+
+            }
+        }
+        .zu-top-nav-userinfo {
+            color: $wordColor;
+            @extend .transition;
+            &:hover {
+                background: $currentItemColor !important;
+                color: $wordHoverColor !important;
+            }
+        }
+        .zu-top-nav-userinfo.selected{
+            background: $topBackground
+        }
+        // .top-nav-dropdown{
+        //     background: $borderLineColor !important;
+        // }
+    }
+}
+/*-----body------*/
+body.zhi {
+    background: rgb(40, 44, 52);
+}
+// 主要区域
+.zu-main-content {
+    // 统一内容
+    a{
+        color: $wordColor!important;
+        @extend .transition;
+        i{
+            opacity: .2;
+            // @extend .transition;
+            transition: opacify .2s ease-in-out;
+
+        }
+        &:hover{
+            color:$wordHoverColor!important;
+            i{
+                opacity: .6
+            }
+        }
+    }
+    div,li{
+        border-color:$borderLineColor!important
+    }
+    // 提问写文章回答
+    .HomeEntry{
+        .HomeEntry-box{
+            background-color: $topBackground;
+            border-color: $borderLineColor
+        }
+        .HomeEntry-boxArrow{
+            &:before{
+                // border-color: $topBackground!important
+                border-top-color:$borderLineColor
+            }
+            &:after{
+                border-top-color:$topBackground
+                // border-color: $topBackground
+            }
+        }
+        .HomeEntry-item:after{
+            background-color: $borderLineColor !important;
+        }
+    }
+    .feed-item-inner {
+        .zh-summary {
+            color: $mainWordColor;
+        }
+        .zm-item-rich-text {
+            color: $mainWordColor;
+        }
+        // .summary{
+        //     color:$mainWordColor
+        // }
+    }
+    //vote
+    .zm-item-vote-count{
+        background-color: $currentItemColor;
+        &:hover{
+            background-color: $borderLineColor!important
+        }
+    }
+}
+
+html.no-touchevents .zh-summary:hover a.toggle-expand{
+    background-color: $borderLineColor!important
+}
+.item-collapse.is-sticky{
+    background-color: $borderLineColor!important;
+    color:$wordColor!important;
+    i{
+        opacity: .2;
+    }
+    &:hover{
+        color:$wordHoverColor!important;
+        i{
+            opacity: .6
+        }
+    }
+}
+.zh-backtotop .btn-action{
+    background-color: $borderLineColor!important;
+    .arrow{
+        border-bottom-color: $currentItemColor!important;
+    }
+    .stick{
+        background-color: $currentItemColor!important;
+    }
+}
+.zm-votebar .up, .zm-votebar .down{
+    background-color: $borderLineColor!important;
+    color:$wordColor!important;
+}
+.zm-votebar .up .vote-arrow{
+    border-bottom-color:$wordColor!important;
+}
+.zm-votebar .down .vote-arrow{
+    border-top-color:$wordColor!important;
+}

@@ -1,0 +1,66 @@
+.transition, img, .zhi .sprite-global-icon-magnifier-dark, .zhi .zu-top-link-logo, .zhi .zu-top-nav-link, .zhi .zu-top-nav-link:visited, .zhi .top-nav-profile .top-nav-dropdown li a, .zhi .top-nav-profile .top-nav-dropdown li a > i, .zhi .top-nav-profile .zu-top-nav-userinfo, .zu-main-content a { transition: 0.2s ease-in-out !important; }
+
+img { opacity: 0.4 !important; }
+img:hover { opacity: 0.9 !important; }
+
+.zhi .sprite-global-icon-magnifier-dark, .zhi .zu-top-link-logo { opacity: 0.2; }
+.zhi .sprite-global-icon-magnifier-dark:hover, .zhi .zu-top-link-logo:hover { opacity: 0.4; }
+.zhi .sprite-global-icon-magnifier-dark { opacity: 0.2; }
+.zhi .zu-top { background: #21252b; border-bottom: 1px solid #181a1f; box-shadow: none; }
+.zhi .zu-top-nav-link { color: #696f7b; }
+.zhi .zu-top-nav-link:visited { color: #696f7b; }
+.zhi .zu-top-nav-link:active, .zhi .zu-top-nav-link:hover { color: #d7dae0; }
+.zhi .zu-top-nav-li.current { background: #2a2e36; }
+.zhi .zu-top-search-form .zu-top-search-button { background: #2a2e36; border: 1px solid #181a1f; box-shadow: none; }
+.zhi .zu-top-search-input { background-color: #2a2e36; border: 1px solid #181a1f; box-shadow: none; color: #d7dae0; }
+.zhi .zu-top-search-input:focus { background-color: #2c323c; box-shadow: 0 0 2px rgba(200, 200, 200, 0.3); }
+.zhi .zu-top-search-input::-webkit-input-placeholder { /* WebKit, Blink, Edge */ color: #696f7b; }
+.zhi .zu-top-search-input:-moz-placeholder { /* Mozilla Firefox 4 to 18 */ color: #696f7b; opacity: 1; }
+.zhi .zu-top-search-input::-moz-placeholder { /* Mozilla Firefox 19+ */ color: #696f7b; opacity: 1; }
+.zhi .zu-top-search-input:-ms-input-placeholder { /* Internet Explorer 10-11 */ color: #696f7b; }
+.zhi .zu-top-add-question { color: #696f7b; background: #2a2e36; border: 1px solid #181a1f; box-shadow: none; }
+.zhi .zu-top-add-question:hover { color: #d7dae0; }
+.zhi .top-nav-profile .top-nav-dropdown li a { background: #2a2e36; color: #696f7b; border-color: #181a1f; }
+.zhi .top-nav-profile .top-nav-dropdown li a > i { opacity: .2; }
+.zhi .top-nav-profile .top-nav-dropdown li a:hover { background: #2a2e36; color: #d7dae0; }
+.zhi .top-nav-profile .top-nav-dropdown li a:hover > i { opacity: .6; }
+.zhi .top-nav-profile:hover .zu-top-nav-userinfo { background: #2a2e36 !important; }
+.zhi .top-nav-profile .zu-top-nav-userinfo { color: #696f7b; }
+.zhi .top-nav-profile .zu-top-nav-userinfo:hover { background: #2a2e36 !important; color: #d7dae0 !important; }
+.zhi .top-nav-profile .zu-top-nav-userinfo.selected { background: #21252b; }
+
+/*-----body------*/
+body.zhi { background: #282c34; }
+
+.zu-main-content a { color: #696f7b !important; }
+.zu-main-content a i { opacity: .2; transition: opacify .2s ease-in-out; }
+.zu-main-content a:hover { color: #d7dae0 !important; }
+.zu-main-content a:hover i { opacity: 0.6; }
+.zu-main-content div, .zu-main-content li { border-color: #181a1f !important; }
+.zu-main-content .HomeEntry .HomeEntry-box { background-color: #21252b; border-color: #181a1f; }
+.zu-main-content .HomeEntry .HomeEntry-boxArrow:before { border-top-color: #181a1f; }
+.zu-main-content .HomeEntry .HomeEntry-boxArrow:after { border-top-color: #21252b; }
+.zu-main-content .HomeEntry .HomeEntry-item:after { background-color: #181a1f !important; }
+.zu-main-content .feed-item-inner .zh-summary { color: #abb2bf; }
+.zu-main-content .feed-item-inner .zm-item-rich-text { color: #abb2bf; }
+.zu-main-content .zm-item-vote-count { background-color: #2a2e36; }
+.zu-main-content .zm-item-vote-count:hover { background-color: #181a1f !important; }
+
+html.no-touchevents .zh-summary:hover a.toggle-expand { background-color: #181a1f !important; }
+
+.item-collapse.is-sticky { background-color: #181a1f !important; color: #696f7b !important; }
+.item-collapse.is-sticky i { opacity: .2; }
+.item-collapse.is-sticky:hover { color: #d7dae0 !important; }
+.item-collapse.is-sticky:hover i { opacity: 0.6; }
+
+.zh-backtotop .btn-action { background-color: #181a1f !important; }
+.zh-backtotop .btn-action .arrow { border-bottom-color: #2a2e36 !important; }
+.zh-backtotop .btn-action .stick { background-color: #2a2e36 !important; }
+
+.zm-votebar .up, .zm-votebar .down { background-color: #181a1f !important; color: #696f7b !important; }
+
+.zm-votebar .up .vote-arrow { border-bottom-color: #696f7b !important; }
+
+.zm-votebar .down .vote-arrow { border-top-color: #696f7b !important; }
+
+/*# sourceMappingURL=zhihu.css.map */

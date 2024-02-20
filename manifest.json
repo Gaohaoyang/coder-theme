@@ -13,7 +13,12 @@
     {
       "js": ["scripts/content.js"],
       "css": ["style/content.css"],
-      "matches": ["<all_urls>"]
+      "matches": [
+        "https://web.shanbay.com/*",
+        "https://www.shanbay.com/*",
+        "https://www.zhihu.com/*",
+        "https://www.duolingo.com/*"
+      ]
     }
   ],
   "action": {

@@ -1,15 +1,50 @@
 @media (prefers-color-scheme: dark) {
-  /* img {
-    opacity: .75;
-    transition: opacity .5s ease-in-out;
+
+  canvas,
+  svg,
+  img {
+    filter: grayscale(100%) !important;
+    opacity: .5 !important;
+  }
+
+  svg:hover {
+    filter: grayscale(0%) !important;
+    opacity: 1 !important;
   }
 
   img:hover {
-    opacity: 1;
+    filter: grayscale(0%) !important;
+    opacity: 1 !important;
   }
 
-  body {
-    background-color: black;
-    color: white;
-  } */
+  canvas:hover {
+    filter: grayscale(0%) !important;
+    opacity: 1 !important;
+  }
+}
+
+.Nav_nav__3kyeO {
+  opacity: 0.1 !important;
+}
+
+.Nav_nav__3kyeO:hover {
+  opacity: 0.9 !important;
+}
+
+.index_progress__1aCBt {
+  opacity: 0.2 !important;
+}
+
+.index_progress__1aCBt:hover {
+  opacity: 0.9 !important;
+}
+
+.StudyPage_nextBtn__1ygGn {
+  filter: grayscale(100%) !important;
+  opacity: 0.1 !important;
+}
+
+.StudyPage_nextBtn__1ygGn:hover {
+  filter: grayscale(0%) !important;
+  opacity: 1 !important;
 }
